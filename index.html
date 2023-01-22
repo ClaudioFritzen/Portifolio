@@ -6,42 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 
 </head>
 
 <body>
 
 <header>
-    <div class="content">
+    <div class="content" >
         <nav>
-            <p class="brand"><strong> Portifólio</p>
-            <ul>
-                <li><a href="#catalog">Projetos</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <strong>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </strong>
         </nav>
+       
+          
     </div>
 </header>
 
 <!-- Projetos-->
 
- <section class="catalog" id="catalog">
-    <div class="content">
-        <div class="title-wrapper-catalog">
-            
-            <h3> Projetos</h3>
-        </div>
-<!--
-        <div class="filter-card">
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Choose your favorite model"
-            />
-            <button class="search-button">Search</button>
-        </div>
--->
+<section class="catalog" id="catalog">    
+
         <div class="card-wrapper">
             
             <div class="card-iten">
@@ -54,18 +52,7 @@
                     
                 </div>
             </div>
-            <!--
-            <div class="card-iten">
-                <img src="images/netflix.jpg" alt="netflix">
-                <div class="card-content">
-                    <h3> Clone da Netflix</h3>
-                    <p>Utilizando apenas CSS e HTML criamos essa linda interface.</p>
-
-                    <a href="" target="_blank"><button type="button">EM BREVE</button></a>
-                    
-                </div>
-            </div>
-            -->
+            
             <div class="card-iten">
                 <img src="images/pandas2.png" alt="top10">
                 <div class="card-content">
@@ -86,19 +73,7 @@
                     
                 </div>
             </div>
-            <!--
-            <div class="card-iten">
-                <img src="images/selenium.png" alt="selenium">
-                <div class="card-content">
-                    <h3> web scraping python</h3>
-                    <p>As automações para facilitar o trabalho diario repetivivo. Como mandar email, consultar cotações de Dolar, Euro, Libra, etc...</p>
-
-                    <a href="https://www.google.com.br/" target="_blank"><button type="button">Ver Projeto</button></a>
-                    
-                </div>
-            </div>
-            -->
-            <!--
+            
             <div class="card-iten">
                 <img src="images/machine.jpg" alt="churn">
                 <div class="card-content">
@@ -114,7 +89,7 @@
                     
                 </div>
             </div>
-            -->
+            
             <div class="card-iten">
                 <img src="images/django.png" alt="django">
                 <div class="card-content">
@@ -141,7 +116,7 @@
 
 
 <!-- Sobre -->
-<section class="about " id="about">
+<!-- <section class="about " id="about">
     <div class="content">
         <div class="title-wrapper-about">
             
@@ -159,29 +134,31 @@
             </div>
         </div>
     </div>
+</section> -->
+<section id="about" class="about">
+    <div class="about-content">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Sobre mim</h2>
+                <p class="lead"><p>Meu nome é Claudio Fritzen, sou desenvolvedor Python com 2 anos de experiência. Gosto de passar
+                    meu tempo livre praticando esporte, jogando videogame, outros meios de entreterimento. Eu tenho
+                    habilidades em Django,Pandas, SQL e tenho trabalhado em alguns projetos como a Nutrilab, Seletive, AdoteumPet.
+                    Entre varios outros projetos. Para mais informações acesse meu GitHub na area de contato.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
 <!-- fim sobre-->
 
 <!-- CONTATO--> 
 <footer>
     <div class="main" id="contato">
         <div class="content footer-link">
-            <div class="footer-company">
-<!--               
-                <h3>Company</h3>
-                <h3>About</h3>
--->               
-            </div>
-<!-- nao precisa            
-            <div class="footer-rental">
-                <h4>Rental</h4>
-                <h6>Self-Drive</h6>
-                <h6>Chauffer-Driven </h6>
-                <h6>Help</h6>
-            </div>
--->            
+                         
             <div class="footer-social">
-                <h2> Stay Connected</h2>
+                <h2> Entre em contato </h2>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/claudio-fritzen-3693b1143/" target="_blank">
                         <img src="images/linkedin.png" />
@@ -192,13 +169,7 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-contact">
-                <h2>Contact US</h2>
-                
-                <h3> sdfritzen96@gmail.com</h3>
-                <h3> +55 51 995066685</h3>
-                <h3> Rua Lagoa Santa, Sapiranga RS</h>
-            </div>
+            
         </div>
     </div>
     
@@ -208,6 +179,9 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     
 </body>
